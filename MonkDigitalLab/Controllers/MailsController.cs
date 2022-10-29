@@ -17,11 +17,11 @@ namespace MonkDigitalLab.Controllers
         private IMailStoreService _mailStoreService;
 
         /// <summary>
-        /// Конструктор
+        /// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
         /// </summary>
-        /// <param name="logger">Логгер</param>
-        /// <param name="mailSenderService">Сервис отправки писем</param>
-        /// <param name="mailService">Сервис писем</param>
+        /// <param name="logger">Р›РѕРіРіРµСЂ</param>
+        /// <param name="mailSenderService">РЎРµСЂРІРёСЃ РѕС‚РїСЂР°РІРєРё РїРёСЃРµРј</param>
+        /// <param name="mailService">РЎРµСЂРІРёСЃ РїРёСЃРµРј</param>
         public MailsController(ILogger<MailsController> logger, 
             IMailSenderService mailSenderService, 
             IMailStoreService mailStoreService)
@@ -32,9 +32,9 @@ namespace MonkDigitalLab.Controllers
         }
 
         /// <summary>
-        /// Получение писем
+        /// РџРѕР»СѓС‡РµРЅРёРµ РїРёСЃРµРј
         /// </summary>
-        /// <returns>Коллекция писем</returns>
+        /// <returns>РљРѕР»Р»РµРєС†РёСЏ РїРёСЃРµРј</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GetMailsResponce>>> Get()
         {
@@ -63,7 +63,7 @@ namespace MonkDigitalLab.Controllers
         }
 
         /// <summary>
-        /// Отправка письма
+        /// РћС‚РїСЂР°РІРєР° РїРёСЃСЊРјР°
         /// </summary>
         /// <returns></returns>
         [HttpPost]
